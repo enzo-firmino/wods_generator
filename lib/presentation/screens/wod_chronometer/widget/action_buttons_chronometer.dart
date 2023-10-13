@@ -22,7 +22,7 @@ class ActionButtonsChronometer extends StatelessWidget {
             builder: (context, isRunning) {
               if (isRunning) {
                 return _ActionButton(
-                  iconData: Icons.stop,
+                  iconData: Icons.pause_rounded,
                   onPressed: () {
                     context.read<WodChronometerBloc>().add(const WodChronometerEvent.paused());
                   },

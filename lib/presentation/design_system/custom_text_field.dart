@@ -30,6 +30,7 @@ class CustomTextField extends StatelessWidget {
       autofocus: _autofocus,
       controller: _controller,
       cursorColor: Colors.black,
+      textInputAction: TextInputAction.go,
       maxLines: null,
       onSubmitted: _onSubmitted,
       style: Theme.of(context).textTheme.labelMedium,
