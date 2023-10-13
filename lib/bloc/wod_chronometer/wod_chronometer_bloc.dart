@@ -14,7 +14,7 @@ class WodChronometerBloc extends Bloc<WodChronometerEvent, WodChronometerState> 
           WodChronometerState(
             stopWatchTimer: StopWatchTimer(
               mode: StopWatchMode.countDown,
-              presetMillisecond: StopWatchTimer.getMilliSecFromSecond(5),
+              presetMillisecond: StopWatchTimer.getMilliSecFromSecond(timecap),
             ),
           ),
         ) {

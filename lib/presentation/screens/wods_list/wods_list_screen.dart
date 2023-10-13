@@ -43,8 +43,9 @@ class WodsListScreen extends StatelessWidget {
                       suffix: const Icon(
                         Icons.refresh_outlined,
                         color: Colors.black,
+                        size: 26,
                       ),
-                      text: 'Rafraîchir',
+                      text: 'Charger de nouveaux WODs',
                     ),
                   ),
                 ],
