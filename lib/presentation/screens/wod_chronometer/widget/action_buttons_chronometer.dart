@@ -54,7 +54,6 @@ class _ActionButton extends StatelessWidget {
   final VoidCallback _onPressed;
 
   const _ActionButton({
-    super.key,
     required IconData iconData,
     required VoidCallback onPressed,
   })  : _iconData = iconData,

@@ -1,13 +1,7 @@
 import 'package:bloc_test/bloc_test.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:mocktail/mocktail.dart';
 import 'package:stop_watch_timer/stop_watch_timer.dart';
 import 'package:wods_generator/bloc/wod_chronometer/wod_chronometer_bloc.dart';
-import 'package:wods_generator/bloc/wods_generator/wods_generator_bloc.dart';
-import 'package:wods_generator/domain/model/wod/wod.dart';
-import 'package:wods_generator/domain/repository/wod_repository.dart';
-
-import '../../entity.dart';
 
 void main() {
   late WodChronometerBloc bloc;

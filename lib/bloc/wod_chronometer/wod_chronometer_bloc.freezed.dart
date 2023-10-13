@@ -88,7 +88,8 @@ class _$WodChronometerEventCopyWithImpl<$Res, $Val extends WodChronometerEvent>
 
 /// @nodoc
 abstract class _$$StartedImplCopyWith<$Res> {
-  factory _$$StartedImplCopyWith(_$StartedImpl value, $Res Function(_$StartedImpl) then) =
+  factory _$$StartedImplCopyWith(
+          _$StartedImpl value, $Res Function(_$StartedImpl) then) =
       __$$StartedImplCopyWithImpl<$Res>;
 }
 
@@ -96,7 +97,8 @@ abstract class _$$StartedImplCopyWith<$Res> {
 class __$$StartedImplCopyWithImpl<$Res>
     extends _$WodChronometerEventCopyWithImpl<$Res, _$StartedImpl>
     implements _$$StartedImplCopyWith<$Res> {
-  __$$StartedImplCopyWithImpl(_$StartedImpl _value, $Res Function(_$StartedImpl) _then)
+  __$$StartedImplCopyWithImpl(
+      _$StartedImpl _value, $Res Function(_$StartedImpl) _then)
       : super(_value, _then);
 }
 
@@ -112,7 +114,8 @@ class _$StartedImpl implements _Started {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) || (other.runtimeType == runtimeType && other is _$StartedImpl);
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$StartedImpl);
   }
 
   @override
@@ -199,14 +202,17 @@ abstract class _Started implements WodChronometerEvent {
 
 /// @nodoc
 abstract class _$$PausedImplCopyWith<$Res> {
-  factory _$$PausedImplCopyWith(_$PausedImpl value, $Res Function(_$PausedImpl) then) =
+  factory _$$PausedImplCopyWith(
+          _$PausedImpl value, $Res Function(_$PausedImpl) then) =
       __$$PausedImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$PausedImplCopyWithImpl<$Res> extends _$WodChronometerEventCopyWithImpl<$Res, _$PausedImpl>
+class __$$PausedImplCopyWithImpl<$Res>
+    extends _$WodChronometerEventCopyWithImpl<$Res, _$PausedImpl>
     implements _$$PausedImplCopyWith<$Res> {
-  __$$PausedImplCopyWithImpl(_$PausedImpl _value, $Res Function(_$PausedImpl) _then)
+  __$$PausedImplCopyWithImpl(
+      _$PausedImpl _value, $Res Function(_$PausedImpl) _then)
       : super(_value, _then);
 }
 
@@ -222,7 +228,8 @@ class _$PausedImpl implements _Paused {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) || (other.runtimeType == runtimeType && other is _$PausedImpl);
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$PausedImpl);
   }
 
   @override
@@ -309,14 +316,17 @@ abstract class _Paused implements WodChronometerEvent {
 
 /// @nodoc
 abstract class _$$ResetImplCopyWith<$Res> {
-  factory _$$ResetImplCopyWith(_$ResetImpl value, $Res Function(_$ResetImpl) then) =
+  factory _$$ResetImplCopyWith(
+          _$ResetImpl value, $Res Function(_$ResetImpl) then) =
       __$$ResetImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$ResetImplCopyWithImpl<$Res> extends _$WodChronometerEventCopyWithImpl<$Res, _$ResetImpl>
+class __$$ResetImplCopyWithImpl<$Res>
+    extends _$WodChronometerEventCopyWithImpl<$Res, _$ResetImpl>
     implements _$$ResetImplCopyWith<$Res> {
-  __$$ResetImplCopyWithImpl(_$ResetImpl _value, $Res Function(_$ResetImpl) _then)
+  __$$ResetImplCopyWithImpl(
+      _$ResetImpl _value, $Res Function(_$ResetImpl) _then)
       : super(_value, _then);
 }
 
@@ -332,7 +342,8 @@ class _$ResetImpl implements _Reset {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) || (other.runtimeType == runtimeType && other is _$ResetImpl);
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$ResetImpl);
   }
 
   @override
@@ -419,7 +430,8 @@ abstract class _Reset implements WodChronometerEvent {
 
 /// @nodoc
 abstract class _$$FinishedImplCopyWith<$Res> {
-  factory _$$FinishedImplCopyWith(_$FinishedImpl value, $Res Function(_$FinishedImpl) then) =
+  factory _$$FinishedImplCopyWith(
+          _$FinishedImpl value, $Res Function(_$FinishedImpl) then) =
       __$$FinishedImplCopyWithImpl<$Res>;
 }
 
@@ -427,7 +439,8 @@ abstract class _$$FinishedImplCopyWith<$Res> {
 class __$$FinishedImplCopyWithImpl<$Res>
     extends _$WodChronometerEventCopyWithImpl<$Res, _$FinishedImpl>
     implements _$$FinishedImplCopyWith<$Res> {
-  __$$FinishedImplCopyWithImpl(_$FinishedImpl _value, $Res Function(_$FinishedImpl) _then)
+  __$$FinishedImplCopyWithImpl(
+      _$FinishedImpl _value, $Res Function(_$FinishedImpl) _then)
       : super(_value, _then);
 }
 
@@ -443,7 +456,8 @@ class _$FinishedImpl implements _Finished {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) || (other.runtimeType == runtimeType && other is _$FinishedImpl);
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$FinishedImpl);
   }
 
   @override
@@ -585,8 +599,8 @@ class _$WodChronometerStateCopyWithImpl<$Res, $Val extends WodChronometerState>
 /// @nodoc
 abstract class _$$WodChronometerStateImplCopyWith<$Res>
     implements $WodChronometerStateCopyWith<$Res> {
-  factory _$$WodChronometerStateImplCopyWith(
-          _$WodChronometerStateImpl value, $Res Function(_$WodChronometerStateImpl) then) =
+  factory _$$WodChronometerStateImplCopyWith(_$WodChronometerStateImpl value,
+          $Res Function(_$WodChronometerStateImpl) then) =
       __$$WodChronometerStateImplCopyWithImpl<$Res>;
   @override
   @useResult
@@ -597,8 +611,8 @@ abstract class _$$WodChronometerStateImplCopyWith<$Res>
 class __$$WodChronometerStateImplCopyWithImpl<$Res>
     extends _$WodChronometerStateCopyWithImpl<$Res, _$WodChronometerStateImpl>
     implements _$$WodChronometerStateImplCopyWith<$Res> {
-  __$$WodChronometerStateImplCopyWithImpl(
-      _$WodChronometerStateImpl _value, $Res Function(_$WodChronometerStateImpl) _then)
+  __$$WodChronometerStateImplCopyWithImpl(_$WodChronometerStateImpl _value,
+      $Res Function(_$WodChronometerStateImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -629,7 +643,9 @@ class __$$WodChronometerStateImplCopyWithImpl<$Res>
 
 class _$WodChronometerStateImpl implements _WodChronometerState {
   const _$WodChronometerStateImpl(
-      {required this.stopWatchTimer, this.isRunning = false, this.isFinished = false});
+      {required this.stopWatchTimer,
+      this.isRunning = false,
+      this.isFinished = false});
 
   @override
   final StopWatchTimer stopWatchTimer;
@@ -652,18 +668,22 @@ class _$WodChronometerStateImpl implements _WodChronometerState {
             other is _$WodChronometerStateImpl &&
             (identical(other.stopWatchTimer, stopWatchTimer) ||
                 other.stopWatchTimer == stopWatchTimer) &&
-            (identical(other.isRunning, isRunning) || other.isRunning == isRunning) &&
-            (identical(other.isFinished, isFinished) || other.isFinished == isFinished));
+            (identical(other.isRunning, isRunning) ||
+                other.isRunning == isRunning) &&
+            (identical(other.isFinished, isFinished) ||
+                other.isFinished == isFinished));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, stopWatchTimer, isRunning, isFinished);
+  int get hashCode =>
+      Object.hash(runtimeType, stopWatchTimer, isRunning, isFinished);
 
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$WodChronometerStateImplCopyWith<_$WodChronometerStateImpl> get copyWith =>
-      __$$WodChronometerStateImplCopyWithImpl<_$WodChronometerStateImpl>(this, _$identity);
+      __$$WodChronometerStateImplCopyWithImpl<_$WodChronometerStateImpl>(
+          this, _$identity);
 }
 
 abstract class _WodChronometerState implements WodChronometerState {

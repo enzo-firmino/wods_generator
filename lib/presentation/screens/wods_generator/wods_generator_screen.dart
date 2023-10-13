@@ -2,9 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:wods_generator/bloc/wods_generator/wods_generator_bloc.dart';
-import 'package:wods_generator/presentation/design_system/custom_elevated_button.dart';
 import 'package:wods_generator/presentation/design_system/custom_scaffold.dart';
 import 'package:wods_generator/presentation/design_system/custom_text_field.dart';
+import 'package:wods_generator/presentation/screens/wods_generator/widget/error_text.dart';
+import 'package:wods_generator/presentation/screens/wods_generator/widget/generate_button.dart';
+import 'package:wods_generator/presentation/screens/wods_generator/widget/text_field_hint.dart';
 import 'package:wods_generator/presentation/screens/wods_list/wods_list_screen.dart';
 
 class WodsGeneratorScreen extends HookWidget {
@@ -42,42 +44,10 @@ class WodsGeneratorScreen extends HookWidget {
                   context.read<WodsGeneratorBloc>().add(WodsGeneratorEvent.generate(prompt: value));
                 },
               ),
-              Align(
-                alignment: Alignment.centerLeft,
-                child: Padding(
-                  padding: const EdgeInsets.only(left: 16.0),
-                  child: Text(
-                    'exemple : “j’ai une douleur au bras droit”',
-                    style: Theme.of(context).textTheme.bodyMedium,
-                  ),
-                ),
-              ),
+              const TextFieldHint(),
+              const ErrorText(),
               const Spacer(),
-              BlocSelector<WodsGeneratorBloc, WodsGeneratorState, bool>(
-                selector: (state) {
-                  return state is WodGeneratorLoading;
-                },
-                builder: (context, isLoading) {
-                  return SafeArea(
-                    child: CustomElevatedButton.text(
-                      onPressed: () {
-                        context
-                            .read<WodsGeneratorBloc>()
-                            .add(WodsGeneratorEvent.generate(prompt: textEditingController.text));
-                      },
-                      text: 'Générer',
-                      suffix: Padding(
-                        padding: const EdgeInsets.only(left: 4.0),
-                        child: isLoading
-                            ? const CircularProgressIndicator.adaptive(
-                                backgroundColor: Colors.white,
-                              )
-                            : const Icon(Icons.arrow_forward_rounded, color: Colors.white),
-                      ),
-                    ),
-                  );
-                },
-              ),
+              GenerateButton(textEditingController: textEditingController),
             ],
           ),
         ),

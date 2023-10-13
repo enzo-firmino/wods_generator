@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:wods_generator/bloc/wods_generator/wods_generator_bloc.dart';
 import 'package:wods_generator/presentation/design_system/custom_scaffold.dart';
-import 'package:wods_generator/presentation/design_system/custom_text_button.dart';
+import 'package:wods_generator/presentation/screens/wods_list/widget/load_new_wods_button.dart';
+import 'package:wods_generator/presentation/screens/wods_list/widget/no_wods_found_text.dart';
 import 'package:wods_generator/presentation/screens/wods_list/widget/wod_card.dart';
 
 class WodsListScreen extends StatelessWidget {
@@ -35,30 +36,12 @@ class WodsListScreen extends StatelessWidget {
                       },
                     ),
                   ),
-                  SafeArea(
-                    child: CustomTextButton(
-                      onPressed: () {
-                        context.read<WodsGeneratorBloc>().add(const WodsGeneratorEvent.generate());
-                      },
-                      suffix: const Icon(
-                        Icons.refresh_outlined,
-                        color: Colors.black,
-                        size: 26,
-                      ),
-                      text: 'Charger de nouveaux WODs',
-                    ),
-                  ),
+                  const LoadNewWodsButton(),
                 ],
               ),
             );
           }
-          return Center(
-            child: Text(
-              'Pas de WOD trouvé, veuillez revenir à l\'étape précédente et réessayer',
-              style: Theme.of(context).textTheme.labelMedium,
-              textAlign: TextAlign.center,
-            ),
-          );
+          return const NoWodsFoundText();
         },
       ),
     );
