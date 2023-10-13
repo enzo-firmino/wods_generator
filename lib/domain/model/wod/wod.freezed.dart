@@ -32,8 +32,7 @@ mixin _$Wod {
 
 /// @nodoc
 abstract class $WodCopyWith<$Res> {
-  factory $WodCopyWith(Wod value, $Res Function(Wod) then) =
-      _$WodCopyWithImpl<$Res, Wod>;
+  factory $WodCopyWith(Wod value, $Res Function(Wod) then) = _$WodCopyWithImpl<$Res, Wod>;
   @useResult
   $Res call({String name, int? timecap, String type, List<Exercise> exercises});
 }
@@ -88,8 +87,7 @@ abstract class _$$WodImplCopyWith<$Res> implements $WodCopyWith<$Res> {
 /// @nodoc
 class __$$WodImplCopyWithImpl<$Res> extends _$WodCopyWithImpl<$Res, _$WodImpl>
     implements _$$WodImplCopyWith<$Res> {
-  __$$WodImplCopyWithImpl(_$WodImpl _value, $Res Function(_$WodImpl) _then)
-      : super(_value, _then);
+  __$$WodImplCopyWithImpl(_$WodImpl _value, $Res Function(_$WodImpl) _then) : super(_value, _then);
 
   @pragma('vm:prefer-inline')
   @override
@@ -130,8 +128,7 @@ class _$WodImpl with DiagnosticableTreeMixin implements _Wod {
       required final List<Exercise> exercises})
       : _exercises = exercises;
 
-  factory _$WodImpl.fromJson(Map<String, dynamic> json) =>
-      _$$WodImplFromJson(json);
+  factory _$WodImpl.fromJson(Map<String, dynamic> json) => _$$WodImplFromJson(json);
 
   @override
   final String name;
@@ -171,14 +168,13 @@ class _$WodImpl with DiagnosticableTreeMixin implements _Wod {
             (identical(other.name, name) || other.name == name) &&
             (identical(other.timecap, timecap) || other.timecap == timecap) &&
             (identical(other.type, type) || other.type == type) &&
-            const DeepCollectionEquality()
-                .equals(other._exercises, _exercises));
+            const DeepCollectionEquality().equals(other._exercises, _exercises));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(runtimeType, name, timecap, type,
-      const DeepCollectionEquality().hash(_exercises));
+  int get hashCode => Object.hash(
+      runtimeType, name, timecap, type, const DeepCollectionEquality().hash(_exercises));
 
   @JsonKey(ignore: true)
   @override
@@ -213,6 +209,5 @@ abstract class _Wod implements Wod {
   List<Exercise> get exercises;
   @override
   @JsonKey(ignore: true)
-  _$$WodImplCopyWith<_$WodImpl> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$WodImplCopyWith<_$WodImpl> get copyWith => throw _privateConstructorUsedError;
 }

@@ -25,12 +25,19 @@ class FinishedChronometerSelector extends StatelessWidget {
                   style: Theme.of(context).textTheme.headlineLarge,
                 ),
                 const SizedBox(height: 24),
-                CustomElevatedButton(
+                CustomElevatedButton.text(
+                  onPressed: () {
+                    Navigator.of(context).pop();
+                  },
+                  text: 'Retourner à la liste des WODs',
+                ),
+                const SizedBox(height: 16),
+                CustomElevatedButton.text(
                   onPressed: () {
                     Navigator.of(context).popUntil((route) => route.isFirst);
                   },
-                  text: 'Choisir un nouveau WOD',
-                )
+                  text: 'Rechercher d\'autres WODs',
+                ),
               ],
             ),
           );

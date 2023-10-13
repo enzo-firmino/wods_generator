@@ -2,16 +2,28 @@ import 'package:flutter/material.dart';
 
 class CustomElevatedButton extends StatelessWidget {
   final VoidCallback _onPressed;
-  final String _text;
+  final String? _text;
+  final IconData? _iconData;
   final Widget? _suffix;
 
-  const CustomElevatedButton({
+  const CustomElevatedButton.text({
     super.key,
     required VoidCallback onPressed,
     required String text,
     Widget? suffix,
   })  : _onPressed = onPressed,
         _text = text,
+        _iconData = null,
+        _suffix = suffix;
+
+  const CustomElevatedButton.icon({
+    super.key,
+    required VoidCallback onPressed,
+    required IconData iconData,
+    Widget? suffix,
+  })  : _onPressed = onPressed,
+        _text = null,
+        _iconData = iconData,
         _suffix = suffix;
 
   @override
@@ -26,10 +38,17 @@ class CustomElevatedButton extends StatelessWidget {
       child: Row(
         mainAxisSize: MainAxisSize.min,
         children: [
-          Text(
-            _text,
-            style: Theme.of(context).textTheme.titleLarge?.copyWith(color: Colors.white),
-          ),
+          if (_text != null)
+            Text(
+              _text!,
+              style: Theme.of(context).textTheme.titleLarge?.copyWith(color: Colors.white),
+            ),
+          if (_iconData != null)
+            Icon(
+              _iconData!,
+              color: Colors.white,
+              size: 28,
+            ),
           if (_suffix != null) _suffix!,
         ],
       ),

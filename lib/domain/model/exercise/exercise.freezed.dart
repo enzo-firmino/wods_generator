@@ -25,8 +25,7 @@ mixin _$Exercise {
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $ExerciseCopyWith<Exercise> get copyWith =>
-      throw _privateConstructorUsedError;
+  $ExerciseCopyWith<Exercise> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -38,8 +37,7 @@ abstract class $ExerciseCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$ExerciseCopyWithImpl<$Res, $Val extends Exercise>
-    implements $ExerciseCopyWith<$Res> {
+class _$ExerciseCopyWithImpl<$Res, $Val extends Exercise> implements $ExerciseCopyWith<$Res> {
   _$ExerciseCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
@@ -67,10 +65,8 @@ class _$ExerciseCopyWithImpl<$Res, $Val extends Exercise>
 }
 
 /// @nodoc
-abstract class _$$ExerciseImplCopyWith<$Res>
-    implements $ExerciseCopyWith<$Res> {
-  factory _$$ExerciseImplCopyWith(
-          _$ExerciseImpl value, $Res Function(_$ExerciseImpl) then) =
+abstract class _$$ExerciseImplCopyWith<$Res> implements $ExerciseCopyWith<$Res> {
+  factory _$$ExerciseImplCopyWith(_$ExerciseImpl value, $Res Function(_$ExerciseImpl) then) =
       __$$ExerciseImplCopyWithImpl<$Res>;
   @override
   @useResult
@@ -78,11 +74,9 @@ abstract class _$$ExerciseImplCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$ExerciseImplCopyWithImpl<$Res>
-    extends _$ExerciseCopyWithImpl<$Res, _$ExerciseImpl>
+class __$$ExerciseImplCopyWithImpl<$Res> extends _$ExerciseCopyWithImpl<$Res, _$ExerciseImpl>
     implements _$$ExerciseImplCopyWith<$Res> {
-  __$$ExerciseImplCopyWithImpl(
-      _$ExerciseImpl _value, $Res Function(_$ExerciseImpl) _then)
+  __$$ExerciseImplCopyWithImpl(_$ExerciseImpl _value, $Res Function(_$ExerciseImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -109,8 +103,7 @@ class __$$ExerciseImplCopyWithImpl<$Res>
 class _$ExerciseImpl with DiagnosticableTreeMixin implements _Exercise {
   const _$ExerciseImpl({required this.name, this.repetitions});
 
-  factory _$ExerciseImpl.fromJson(Map<String, dynamic> json) =>
-      _$$ExerciseImplFromJson(json);
+  factory _$ExerciseImpl.fromJson(Map<String, dynamic> json) => _$$ExerciseImplFromJson(json);
 
   @override
   final String name;
@@ -137,14 +130,13 @@ class _$ExerciseImpl with DiagnosticableTreeMixin implements _Exercise {
         (other.runtimeType == runtimeType &&
             other is _$ExerciseImpl &&
             (identical(other.name, name) || other.name == name) &&
-            const DeepCollectionEquality()
-                .equals(other.repetitions, repetitions));
+            const DeepCollectionEquality().equals(other.repetitions, repetitions));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(
-      runtimeType, name, const DeepCollectionEquality().hash(repetitions));
+  int get hashCode =>
+      Object.hash(runtimeType, name, const DeepCollectionEquality().hash(repetitions));
 
   @JsonKey(ignore: true)
   @override
@@ -161,11 +153,9 @@ class _$ExerciseImpl with DiagnosticableTreeMixin implements _Exercise {
 }
 
 abstract class _Exercise implements Exercise {
-  const factory _Exercise(
-      {required final String name, final dynamic repetitions}) = _$ExerciseImpl;
+  const factory _Exercise({required final String name, final dynamic repetitions}) = _$ExerciseImpl;
 
-  factory _Exercise.fromJson(Map<String, dynamic> json) =
-      _$ExerciseImpl.fromJson;
+  factory _Exercise.fromJson(Map<String, dynamic> json) = _$ExerciseImpl.fromJson;
 
   @override
   String get name;
@@ -173,6 +163,5 @@ abstract class _Exercise implements Exercise {
   dynamic get repetitions;
   @override
   @JsonKey(ignore: true)
-  _$$ExerciseImplCopyWith<_$ExerciseImpl> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$ExerciseImplCopyWith<_$ExerciseImpl> get copyWith => throw _privateConstructorUsedError;
 }

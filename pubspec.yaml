@@ -1,5 +1,5 @@
 name: wods_generator
-description: A new Flutter project.
+description: Application de génération de WODs
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 
 version: 1.0.0+1

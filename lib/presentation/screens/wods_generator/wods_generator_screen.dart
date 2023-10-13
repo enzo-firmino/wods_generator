@@ -15,7 +15,9 @@ class WodsGeneratorScreen extends HookWidget {
     TextEditingController textEditingController = useTextEditingController();
     return BlocListener<WodsGeneratorBloc, WodsGeneratorState>(
       listenWhen: (WodsGeneratorState prevState, WodsGeneratorState state) {
-        return prevState is! WodGeneratorSuccess && state is WodGeneratorSuccess;
+        return (ModalRoute.of(context)?.isCurrent ?? false) &&
+            prevState is! WodGeneratorSuccess &&
+            state is WodGeneratorSuccess;
       },
       listener: (context, state) {
         Navigator.of(context).push(
@@ -44,7 +46,10 @@ class WodsGeneratorScreen extends HookWidget {
                 alignment: Alignment.centerLeft,
                 child: Padding(
                   padding: const EdgeInsets.only(left: 16.0),
-                  child: Text('ex: “j’ai une douleur au bras droit”', style: Theme.of(context).textTheme.bodyMedium,),
+                  child: Text(
+                    'exemple : “j’ai une douleur au bras droit”',
+                    style: Theme.of(context).textTheme.bodyMedium,
+                  ),
                 ),
               ),
               const Spacer(),
@@ -54,7 +59,7 @@ class WodsGeneratorScreen extends HookWidget {
                 },
                 builder: (context, isLoading) {
                   return SafeArea(
-                    child: CustomElevatedButton(
+                    child: CustomElevatedButton.text(
                       onPressed: () {
                         context
                             .read<WodsGeneratorBloc>()

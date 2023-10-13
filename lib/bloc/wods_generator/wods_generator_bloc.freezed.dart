@@ -89,10 +89,8 @@ class _$WodsGeneratorEventCopyWithImpl<$Res, $Val extends WodsGeneratorEvent>
 }
 
 /// @nodoc
-abstract class _$$GenerateImplCopyWith<$Res>
-    implements $WodsGeneratorEventCopyWith<$Res> {
-  factory _$$GenerateImplCopyWith(
-          _$GenerateImpl value, $Res Function(_$GenerateImpl) then) =
+abstract class _$$GenerateImplCopyWith<$Res> implements $WodsGeneratorEventCopyWith<$Res> {
+  factory _$$GenerateImplCopyWith(_$GenerateImpl value, $Res Function(_$GenerateImpl) then) =
       __$$GenerateImplCopyWithImpl<$Res>;
   @override
   @useResult
@@ -103,8 +101,7 @@ abstract class _$$GenerateImplCopyWith<$Res>
 class __$$GenerateImplCopyWithImpl<$Res>
     extends _$WodsGeneratorEventCopyWithImpl<$Res, _$GenerateImpl>
     implements _$$GenerateImplCopyWith<$Res> {
-  __$$GenerateImplCopyWithImpl(
-      _$GenerateImpl _value, $Res Function(_$GenerateImpl) _then)
+  __$$GenerateImplCopyWithImpl(_$GenerateImpl _value, $Res Function(_$GenerateImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -215,8 +212,7 @@ abstract class _Generate implements WodsGeneratorEvent {
   String? get prompt;
   @override
   @JsonKey(ignore: true)
-  _$$GenerateImplCopyWith<_$GenerateImpl> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$GenerateImplCopyWith<_$GenerateImpl> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -293,8 +289,8 @@ class _$WodsGeneratorStateCopyWithImpl<$Res, $Val extends WodsGeneratorState>
 
 /// @nodoc
 abstract class _$$WodGeneratorInitialImplCopyWith<$Res> {
-  factory _$$WodGeneratorInitialImplCopyWith(_$WodGeneratorInitialImpl value,
-          $Res Function(_$WodGeneratorInitialImpl) then) =
+  factory _$$WodGeneratorInitialImplCopyWith(
+          _$WodGeneratorInitialImpl value, $Res Function(_$WodGeneratorInitialImpl) then) =
       __$$WodGeneratorInitialImplCopyWithImpl<$Res>;
 }
 
@@ -302,8 +298,8 @@ abstract class _$$WodGeneratorInitialImplCopyWith<$Res> {
 class __$$WodGeneratorInitialImplCopyWithImpl<$Res>
     extends _$WodsGeneratorStateCopyWithImpl<$Res, _$WodGeneratorInitialImpl>
     implements _$$WodGeneratorInitialImplCopyWith<$Res> {
-  __$$WodGeneratorInitialImplCopyWithImpl(_$WodGeneratorInitialImpl _value,
-      $Res Function(_$WodGeneratorInitialImpl) _then)
+  __$$WodGeneratorInitialImplCopyWithImpl(
+      _$WodGeneratorInitialImpl _value, $Res Function(_$WodGeneratorInitialImpl) _then)
       : super(_value, _then);
 }
 
@@ -320,8 +316,7 @@ class _$WodGeneratorInitialImpl implements WodGeneratorInitial {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$WodGeneratorInitialImpl);
+        (other.runtimeType == runtimeType && other is _$WodGeneratorInitialImpl);
   }
 
   @override
@@ -408,8 +403,8 @@ abstract class WodGeneratorInitial implements WodsGeneratorState {
 
 /// @nodoc
 abstract class _$$WodGeneratorLoadingImplCopyWith<$Res> {
-  factory _$$WodGeneratorLoadingImplCopyWith(_$WodGeneratorLoadingImpl value,
-          $Res Function(_$WodGeneratorLoadingImpl) then) =
+  factory _$$WodGeneratorLoadingImplCopyWith(
+          _$WodGeneratorLoadingImpl value, $Res Function(_$WodGeneratorLoadingImpl) then) =
       __$$WodGeneratorLoadingImplCopyWithImpl<$Res>;
 }
 
@@ -417,8 +412,8 @@ abstract class _$$WodGeneratorLoadingImplCopyWith<$Res> {
 class __$$WodGeneratorLoadingImplCopyWithImpl<$Res>
     extends _$WodsGeneratorStateCopyWithImpl<$Res, _$WodGeneratorLoadingImpl>
     implements _$$WodGeneratorLoadingImplCopyWith<$Res> {
-  __$$WodGeneratorLoadingImplCopyWithImpl(_$WodGeneratorLoadingImpl _value,
-      $Res Function(_$WodGeneratorLoadingImpl) _then)
+  __$$WodGeneratorLoadingImplCopyWithImpl(
+      _$WodGeneratorLoadingImpl _value, $Res Function(_$WodGeneratorLoadingImpl) _then)
       : super(_value, _then);
 }
 
@@ -435,8 +430,7 @@ class _$WodGeneratorLoadingImpl implements WodGeneratorLoading {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$WodGeneratorLoadingImpl);
+        (other.runtimeType == runtimeType && other is _$WodGeneratorLoadingImpl);
   }
 
   @override
@@ -523,8 +517,8 @@ abstract class WodGeneratorLoading implements WodsGeneratorState {
 
 /// @nodoc
 abstract class _$$WodGeneratorSuccessImplCopyWith<$Res> {
-  factory _$$WodGeneratorSuccessImplCopyWith(_$WodGeneratorSuccessImpl value,
-          $Res Function(_$WodGeneratorSuccessImpl) then) =
+  factory _$$WodGeneratorSuccessImplCopyWith(
+          _$WodGeneratorSuccessImpl value, $Res Function(_$WodGeneratorSuccessImpl) then) =
       __$$WodGeneratorSuccessImplCopyWithImpl<$Res>;
   @useResult
   $Res call({String? prompt, List<Wod> wods});
@@ -534,8 +528,8 @@ abstract class _$$WodGeneratorSuccessImplCopyWith<$Res> {
 class __$$WodGeneratorSuccessImplCopyWithImpl<$Res>
     extends _$WodsGeneratorStateCopyWithImpl<$Res, _$WodGeneratorSuccessImpl>
     implements _$$WodGeneratorSuccessImplCopyWith<$Res> {
-  __$$WodGeneratorSuccessImplCopyWithImpl(_$WodGeneratorSuccessImpl _value,
-      $Res Function(_$WodGeneratorSuccessImpl) _then)
+  __$$WodGeneratorSuccessImplCopyWithImpl(
+      _$WodGeneratorSuccessImpl _value, $Res Function(_$WodGeneratorSuccessImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -560,8 +554,7 @@ class __$$WodGeneratorSuccessImplCopyWithImpl<$Res>
 /// @nodoc
 
 class _$WodGeneratorSuccessImpl implements WodGeneratorSuccess {
-  const _$WodGeneratorSuccessImpl({this.prompt, required final List<Wod> wods})
-      : _wods = wods;
+  const _$WodGeneratorSuccessImpl({this.prompt, required final List<Wod> wods}) : _wods = wods;
 
   @override
   final String? prompt;
@@ -588,15 +581,13 @@ class _$WodGeneratorSuccessImpl implements WodGeneratorSuccess {
   }
 
   @override
-  int get hashCode => Object.hash(
-      runtimeType, prompt, const DeepCollectionEquality().hash(_wods));
+  int get hashCode => Object.hash(runtimeType, prompt, const DeepCollectionEquality().hash(_wods));
 
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$WodGeneratorSuccessImplCopyWith<_$WodGeneratorSuccessImpl> get copyWith =>
-      __$$WodGeneratorSuccessImplCopyWithImpl<_$WodGeneratorSuccessImpl>(
-          this, _$identity);
+      __$$WodGeneratorSuccessImplCopyWithImpl<_$WodGeneratorSuccessImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -674,9 +665,8 @@ class _$WodGeneratorSuccessImpl implements WodGeneratorSuccess {
 }
 
 abstract class WodGeneratorSuccess implements WodsGeneratorState {
-  const factory WodGeneratorSuccess(
-      {final String? prompt,
-      required final List<Wod> wods}) = _$WodGeneratorSuccessImpl;
+  const factory WodGeneratorSuccess({final String? prompt, required final List<Wod> wods}) =
+      _$WodGeneratorSuccessImpl;
 
   String? get prompt;
   List<Wod> get wods;
@@ -687,8 +677,7 @@ abstract class WodGeneratorSuccess implements WodsGeneratorState {
 
 /// @nodoc
 abstract class _$$FailureImplCopyWith<$Res> {
-  factory _$$FailureImplCopyWith(
-          _$FailureImpl value, $Res Function(_$FailureImpl) then) =
+  factory _$$FailureImplCopyWith(_$FailureImpl value, $Res Function(_$FailureImpl) then) =
       __$$FailureImplCopyWithImpl<$Res>;
   @useResult
   $Res call({String error});
@@ -698,8 +687,7 @@ abstract class _$$FailureImplCopyWith<$Res> {
 class __$$FailureImplCopyWithImpl<$Res>
     extends _$WodsGeneratorStateCopyWithImpl<$Res, _$FailureImpl>
     implements _$$FailureImplCopyWith<$Res> {
-  __$$FailureImplCopyWithImpl(
-      _$FailureImpl _value, $Res Function(_$FailureImpl) _then)
+  __$$FailureImplCopyWithImpl(_$FailureImpl _value, $Res Function(_$FailureImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -826,6 +814,5 @@ abstract class _Failure implements WodsGeneratorState {
 
   String get error;
   @JsonKey(ignore: true)
-  _$$FailureImplCopyWith<_$FailureImpl> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$FailureImplCopyWith<_$FailureImpl> get copyWith => throw _privateConstructorUsedError;
 }

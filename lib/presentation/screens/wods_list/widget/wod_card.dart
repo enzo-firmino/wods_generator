@@ -53,7 +53,7 @@ class WodCard extends StatelessWidget {
                   const SizedBox(height: 2.0),
                   Text(
                     "Liste des exercices : ",
-                    style: Theme.of(context).textTheme.labelMedium?.copyWith(color: Colors.white),
+                    style: Theme.of(context).textTheme.bodyMedium?.copyWith(color: Colors.white),
                   ),
                   ..._wod.exercises.map(
                     (Exercise exercise) {
@@ -62,10 +62,10 @@ class WodCard extends StatelessWidget {
                         child: Row(
                           children: [
                             Text(
-                              '- ${exercise.name}  x${exercise.repetitions.toString()}',
+                              '- ${exercise.name}  ${exercise.repetitions != null ? 'x${exercise.repetitions.toString()}' : ''}',
                               style: Theme.of(context)
                                   .textTheme
-                                  .bodyMedium
+                                  .labelMedium
                                   ?.copyWith(color: Colors.white),
                             ),
                           ],

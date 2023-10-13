@@ -22,14 +22,14 @@ class ActionButtonsChronometer extends StatelessWidget {
             builder: (context, isRunning) {
               if (isRunning) {
                 return _ActionButton(
-                  text: 'Stop',
+                  iconData: Icons.stop,
                   onPressed: () {
                     context.read<WodChronometerBloc>().add(const WodChronometerEvent.paused());
                   },
                 );
               } else {
                 return _ActionButton(
-                  text: 'Start',
+                  iconData: Icons.play_arrow_rounded,
                   onPressed: () {
                     context.read<WodChronometerBloc>().add(const WodChronometerEvent.started());
                   },
@@ -41,7 +41,7 @@ class ActionButtonsChronometer extends StatelessWidget {
             onPressed: () {
               context.read<WodChronometerBloc>().add(const WodChronometerEvent.reset());
             },
-            text: 'Reset',
+            iconData: Icons.refresh_rounded,
           ),
         ],
       ),
@@ -50,14 +50,14 @@ class ActionButtonsChronometer extends StatelessWidget {
 }
 
 class _ActionButton extends StatelessWidget {
-  final String _text;
+  final IconData _iconData;
   final VoidCallback _onPressed;
 
   const _ActionButton({
     super.key,
-    required String text,
+    required IconData iconData,
     required VoidCallback onPressed,
-  })  : _text = text,
+  })  : _iconData = iconData,
         _onPressed = onPressed;
 
   @override
@@ -65,9 +65,9 @@ class _ActionButton extends StatelessWidget {
     return Flexible(
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 4),
-        child: CustomElevatedButton(
+        child: CustomElevatedButton.icon(
           onPressed: _onPressed,
-          text: _text,
+          iconData: _iconData,
         ),
       ),
     );

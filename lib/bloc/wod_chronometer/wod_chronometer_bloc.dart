@@ -3,9 +3,7 @@ import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:stop_watch_timer/stop_watch_timer.dart';
 
 part 'wod_chronometer_bloc.freezed.dart';
-
 part 'wod_chronometer_event.dart';
-
 part 'wod_chronometer_state.dart';
 
 class WodChronometerBloc extends Bloc<WodChronometerEvent, WodChronometerState> {
@@ -14,7 +12,7 @@ class WodChronometerBloc extends Bloc<WodChronometerEvent, WodChronometerState> 
           WodChronometerState(
             stopWatchTimer: StopWatchTimer(
               mode: StopWatchMode.countDown,
-              presetMillisecond: StopWatchTimer.getMilliSecFromSecond(timecap),
+              presetMillisecond: StopWatchTimer.getMilliSecFromMinute(timecap),
             ),
           ),
         ) {
